@@ -14,7 +14,7 @@ describe('requisito numero 3', () => {
   });
 
   test('Teste se apenas são exibidos os Pokémon favoritados', () => {
-    const { history } = renderWithRouter(<App />);
+    renderWithRouter(<App />);
     const link1 = screen.getByRole('link', { name: 'Home' });
     userEvent.click(link1);
     const moreDetails = screen.getByText('More details');

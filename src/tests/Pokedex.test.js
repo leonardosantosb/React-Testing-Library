@@ -79,6 +79,6 @@ describe('requisito numero 5', () => {
     const pokefire = screen.getByText('Charmander');
     expect(pokefire).toBeInTheDocument();
     userEvent.click(buttonAll);
-    expect(poke0).toBeInTheDocument();
+    expect(screen.getByText('Pikachu')).toBeInTheDocument();
   });
 });
